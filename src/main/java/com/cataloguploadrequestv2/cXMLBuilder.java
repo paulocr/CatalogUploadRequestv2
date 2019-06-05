@@ -45,7 +45,7 @@ public class cXMLBuilder {
         doc.setXmlStandalone(true);
 
         DOMImplementation domImpl = doc.getImplementation();
-        DocumentType docType = domImpl.createDocumentType("doctype", "", "http://xml.cXML.org/schemas/cXML/1.2.033/cXML.dtd");
+        DocumentType docType = domImpl.createDocumentType("doctype", "", "http://xml.cXML.org/schemas/cXML/" +  XMLVersion + "/cXML.dtd");
 
         // cXML root element
         Element rootElement = doc.createElement("cXML");
